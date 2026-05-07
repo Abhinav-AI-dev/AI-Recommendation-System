@@ -11,17 +11,14 @@ from sklearn.preprocessing import StandardScaler
 st.set_page_config(
     page_title="AI Shopping Recommendation System",
     layout="wide",
-    initial_sidebar_state="auto"
+    initial_sidebar_state="expanded"
 )
 
 # =====================================================
 # HIDE STREAMLIT DEFAULT UI
 # =====================================================
-hide_streamlit_style = """
+custom_css = """
 <style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
 
 .stButton>button {
     width: 100%;
@@ -30,13 +27,6 @@ header {visibility: hidden;}
     background-color: #00ADB5;
     color: white;
     font-size: 16px;
-}
-
-.product-card {
-    padding: 20px;
-    border-radius: 15px;
-    background-color: #1E293B;
-    margin-bottom: 20px;
 }
 
 .title {
@@ -52,10 +42,11 @@ header {visibility: hidden;}
     color: gray;
     margin-bottom: 30px;
 }
+
 </style>
 """
 
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+st.markdown(custom_css, unsafe_allow_html=True)
 
 # =====================================================
 # HERO SECTION
