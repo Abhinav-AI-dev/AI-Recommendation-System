@@ -11,6 +11,7 @@ from sklearn.preprocessing import StandardScaler
 st.set_page_config(
     page_title="AI Shopping Recommendation System",
     layout="wide"
+    initial_sidebar_state = "expanded"
 )
 
 # =====================================================
