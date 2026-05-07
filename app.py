@@ -64,7 +64,6 @@ st.markdown("""
 <div class="title">
 🛍️ Smart AI Shopping Assistant
 </div>
-st.sidebar.success("Navigation Menu")
 <div class="subtitle">
 Personalized Product Recommendations using Machine Learning
 </div>
